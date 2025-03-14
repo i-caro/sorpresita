@@ -13,7 +13,7 @@ body {
 .container {
     text-align: center;
     background: rgba(255, 255, 255, 0.9);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     max-width: 700px;
@@ -95,5 +95,61 @@ body::before {
     }
     to {
         transform: translate(20px, 20px);
+    }
+}
+
+/* Responsividad para tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #motivational-phrase {
+        font-size: 1.1rem;
+    }
+
+    #countdown div, .extra-info div {
+        width: 100px;
+        padding: 1rem;
+    }
+
+    #countdown span, .extra-info span {
+        font-size: 2rem;
+    }
+
+    #countdown span:last-child, .extra-info span:last-child {
+        font-size: 1rem;
+    }
+}
+
+/* Responsividad para móviles */
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #motivational-phrase {
+        font-size: 1rem;
+    }
+
+    #countdown, .extra-info {
+        gap: 1rem;
+    }
+
+    #countdown div, .extra-info div {
+        width: 80px;
+        padding: 0.8rem;
+    }
+
+    #countdown span, .extra-info span {
+        font-size: 1.5rem;
+    }
+
+    #countdown span:last-child, .extra-info span:last-child {
+        font-size: 0.9rem;
     }
 }
