@@ -124,9 +124,6 @@ body::before {
 
 /* Responsividad para móviles */
 @media (max-width: 480px) {
-    .container {
-        padding: 1.5rem;
-    }
 
     h1 {
         font-size: 1.8rem;
