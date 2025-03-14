@@ -1,13 +1,16 @@
-body {
+/* Reiniciamos márgenes y paddings */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
 }
 
 .container {
@@ -16,8 +19,8 @@ body {
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    max-width: 90%;
-    width: 100%;
+    max-width: 700px;
+    width: 90%;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -124,6 +127,9 @@ body::before {
 
 /* Responsividad para móviles */
 @media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
 
     h1 {
         font-size: 1.8rem;
